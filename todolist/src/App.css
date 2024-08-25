@@ -1,0 +1,118 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.create_form input {
+  width: 100%; /* Full width for mobile devices */
+  max-width: 300px; /* Limit maximum width */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.create_form button {
+  width: 100%; /* Full width for mobile devices */
+  max-width: 300px; /* Limit maximum width */
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.create_form button:hover {
+  background-color: #333;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width for mobile devices */
+  max-width: 345px; /* Limit maximum width */
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: auto; /* Adjust height to fit content */
+  padding: 10px 5px; /* Increased padding for better touch targets */
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.task:hover {
+  background-color: #333;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.line_through {
+  text-decoration: line-through;
+  word-break: break-word; /* Break long words to fit within the container */
+}
+
+.icon {
+  font-size: 15px;
+  color: inherit; /* Ensure color is not set to the same as the background */
+}
+
+.checkbox .icon {
+  margin-right: 5px;
+  font-size: 18px; /* Slightly larger icons for better accessibility */
+}
+
+.task div span {
+  margin: 0 5px;
+}
+
+.task div .icon {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.task div .icon:hover {
+  color: #ff4d4d;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .home {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .create_form input {
+    width: 100%; /* Full width for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  .create_form button {
+    width: 100%; /* Full width for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  .task {
+    width: 100%; /* Full width for smaller screens */
+    padding: 10px; /* Maintain padding for better touch targets */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  .checkbox .icon {
+    font-size: 16px; /* Adjust icon size for smaller screens */
+  }
+
+  .task div span {
+    margin: 0 3px; /* Adjust margins for smaller screens */
+  }
+}
